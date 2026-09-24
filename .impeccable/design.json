@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T17:37:44Z",
+  "title": "Design System: Portfólio de Vinícius F. Marrocos",
+  "extensions": {
+    "motion": [
+      { "name": "hover", "value": "150ms ease", "purpose": "Resposta breve de botões, links e controles." },
+      { "name": "portrait-pop", "value": "700ms 200ms cubic-bezier(.2,.8,.2,1)", "purpose": "Retrato: escala 0.78, passa por 1.03 e assenta em 1; opacidade de 0 a 1." },
+      { "name": "hero-appear", "value": "600ms ease-out", "purpose": "Nome, papel, introdução e ações: opacidade de 0 a 1 e deslocamento vertical de 20px, com atrasos de 300ms, 350ms, 400ms e 500ms." },
+      { "name": "hero-fade", "value": "600ms ease-out", "purpose": "Links sociais aparecem após 600ms; seta aparece após 1000ms." },
+      { "name": "cue-bob", "value": "1500ms 1500ms ease-in-out infinite", "purpose": "Seta oscila 10px para baixo após o atraso inicial." },
+      { "name": "section-reveal", "value": "500ms ease-out", "purpose": "IntersectionObserver revela elementos uma vez: opacidade de 0 a 1 e deslocamento vertical de 16px; grupos e cartões podem ter atraso de 80ms." },
+      { "name": "skill-stagger", "value": "30ms por chip", "purpose": "Competências entram de escala 0.9 para 1, em sequência dentro de cada grupo." },
+      { "name": "project-hover", "value": "300ms ease", "purpose": "Borda e sombra do cartão respondem ao hover; o cartão sobe 4px." },
+      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "Desativa animações e rolagem suave; transições passam a 0.01ms." }
+    ],
+    "breakpoints": [
+      { "name": "hero-stack", "value": "900px" },
+      { "name": "mobile-navigation", "value": "760px" },
+      { "name": "small-mobile", "value": "520px" }
+    ],
+    "shadows": [
+      { "name": "portrait", "value": "0 16px 42px rgb(0 0 0 / 0.13)", "purpose": "Separar o retrato da grade sem efeito decorativo forte." },
+      { "name": "mobile-navigation", "value": "0 18px 28px rgb(0 0 0 / 0.14)", "purpose": "Separar o menu aberto do conteúdo em telas até 760px." },
+      { "name": "project-hover", "value": "0 16px 36px rgb(0 0 0 / 0.18)", "purpose": "Elevar o cartão de projeto no hover." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal de contato.",
+      "html": "<button class=\"ds-button-primary\">Entrar em contato</button>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 21px;border:1px solid transparent;border-radius:6px;background:var(--accent-solid,#adf156);color:var(--accent-on,#15200d);font:630 14px Geist,system-ui,sans-serif;cursor:pointer;transition:background-color 150ms ease,transform 150ms ease}.ds-button-primary:hover{background:var(--accent-hover,#9add48);color:var(--accent-on,#15200d);transform:translateY(-2px)}.ds-button-primary:focus-visible{outline:2px solid var(--focus,#c0f27c);outline-offset:4px}"
+    },
+    {
+      "name": "Botão secundário",
+      "kind": "button",
+      "description": "Ação de navegação para os projetos.",
+      "html": "<button class=\"ds-button-secondary\">Ver projetos ↓</button>",
+      "css": ".ds-button-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 21px;border:1px solid var(--line,#373c2d);border-radius:6px;background:var(--surface,#191b15);color:var(--text,#fafbf5);font:630 14px Geist,system-ui,sans-serif;cursor:pointer;transition:border-color 150ms ease,transform 150ms ease}.ds-button-secondary:hover{border-color:var(--accent,#c0f27c);color:var(--text,#fafbf5);transform:translateY(-2px)}.ds-button-secondary:focus-visible{outline:2px solid var(--focus,#c0f27c);outline-offset:4px}"
+    },
+    {
+      "name": "Etiqueta de tecnologia",
+      "kind": "chip",
+      "description": "Tecnologia usada em projeto.",
+      "html": "<span class=\"ds-chip\">React</span>",
+      "css": ".ds-chip{display:inline-block;padding:5px 8px;border-radius:6px;background:var(--tag,#29351b);color:var(--tag-text,#d2ffa3);font:400 10px 'Geist Mono',monospace;line-height:1.25}"
+    },
+    {
+      "name": "Cartão de projeto",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Moldura e corpo de conteúdo do projeto; a página inclui a captura real acima do corpo.",
+      "html": "<article class=\"ds-project-card\"><div class=\"ds-project-card-body\"><span>VFitness</span><p>Aplicação fullstack para organizar treinos.</p></div></article>",
+      "css": ".ds-project-card{overflow:hidden;border:1px solid var(--line,#373c2d);border-radius:6px;background:var(--surface,#191b15);color:var(--text,#fafbf5);font:400 15px Geist,system-ui,sans-serif;transition:transform 500ms ease-out,border-color 300ms ease,box-shadow 300ms ease}.ds-project-card:hover{transform:translateY(-4px);border-color:var(--accent,#c0f27c);box-shadow:0 16px 36px rgb(0 0 0 / 0.18)}.ds-project-card-body{padding:24px}.ds-project-card span{font-size:24px;font-weight:700}.ds-project-card p{margin:9px 0 0;color:var(--muted,#c3c8b7);line-height:1.65}@media(prefers-reduced-motion:reduce){.ds-project-card{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Navegação",
+      "kind": "nav",
+      "description": "Links compactos para as seções da página.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#sobre\">Sobre</a><a href=\"#stack\">Stack</a><a href=\"#projetos\">Projetos</a><a href=\"#formacao\">Formação</a><a href=\"#contato\">Contato</a></nav>",
+      "css": ".ds-nav{display:flex;gap:29px;font:400 14px Geist,system-ui,sans-serif}.ds-nav a{color:var(--muted,#c3c8b7);text-decoration:none;transition:color 150ms ease}.ds-nav a:hover{color:var(--text,#fafbf5)}.ds-nav a:focus-visible{outline:2px solid var(--focus,#c0f27c);outline-offset:4px}"
+    },
+    {
+      "name": "Progresso de rolagem",
+      "kind": "custom",
+      "description": "Linha fixa de 2px que indica quanto da página foi percorrido.",
+      "html": "<div class=\"ds-scroll-progress\" aria-hidden=\"true\"></div>",
+      "css": ".ds-scroll-progress{position:fixed;top:0;left:0;z-index:40;width:100%;height:2px;background:var(--accent-solid,#adf156);transform:scaleX(var(--scroll-progress,0));transform-origin:left;pointer-events:none}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Grade técnica em verde-lima",
+    "overview": "O visual escolhido pelo usuário combina a estrutura sóbria dos exemplos enviados com uma composição gráfica mais expressiva. A foto pessoal apresenta Vinícius; os dashboards reais sustentam os projetos. A interface usa espaço amplo, contornos discretos e verde-lima em pontos de ação e orientação.",
+    "keyCharacteristics": ["fundo quase preto", "texto branco suave", "verde-lima pontual", "nome em caixa alta", "retrato retangular", "cartões com prints reais"],
+    "rules": [],
+    "dos": ["Do usar imagens reais dos projetos e retrato fornecido pelo proprietário.", "Do reservar o verde-lima para destaque, ação e orientação.", "Do manter a legibilidade dos dois temas e a navegação por teclado."],
+    "donts": ["Don't criar dashboards falsos para representar projetos.", "Don't introduzir um segundo acento de interface que dispute com o verde-lima.", "Don't arredondar novos controles como pílulas; usar a escala de cantos definida."]
+  }
+}
