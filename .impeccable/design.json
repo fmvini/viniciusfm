@@ -64,6 +64,13 @@
       "css": ".ds-nav{display:flex;gap:29px;font:400 14px Geist,system-ui,sans-serif}.ds-nav a{color:var(--muted,#c3c8b7);text-decoration:none;transition:color 150ms ease}.ds-nav a:hover{color:var(--text,#fafbf5)}.ds-nav a:focus-visible{outline:2px solid var(--focus,#c0f27c);outline-offset:4px}"
     },
     {
+      "name": "Rótulo de seção",
+      "kind": "custom",
+      "description": "Identifica Sobre, Stack, Projetos, Formação e Contato acima do título principal da seção.",
+      "html": "<span class=\"ds-section-label\">Projetos</span>",
+      "css": ".ds-section-label{display:block;margin-bottom:13px;color:var(--accent,#c0f27c);font:600 12px 'Geist Mono',monospace;letter-spacing:.14em;text-transform:uppercase}"
+    },
+    {
       "name": "Progresso de rolagem",
       "kind": "custom",
       "description": "Linha fixa de 2px que indica quanto da página foi percorrido.",

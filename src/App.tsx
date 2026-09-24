@@ -159,6 +159,7 @@ function App() {
         <section className="section about-section" id="sobre" aria-labelledby="about-title">
           <div className="container narrow-container">
             <div className="section-heading" data-reveal>
+              <span className="section-label">Sobre</span>
               <h2 id="about-title">Quem está por trás do código</h2>
             </div>
             <div className="prose" data-reveal style={{ transitionDelay: '80ms' }}>
@@ -170,6 +171,7 @@ function App() {
         <section className="section skills-section grid-surface" id="stack" aria-labelledby="skills-title">
           <div className="container narrow-container">
             <div className="section-heading" data-reveal>
+              <span className="section-label">Stack</span>
               <h2 id="skills-title">Tecnologias que uso no dia a dia</h2>
             </div>
             <div className="skills-grid">
@@ -188,6 +190,7 @@ function App() {
         <section className="section projects-section grid-surface" id="projetos" aria-labelledby="projects-title">
           <div className="container narrow-container">
             <div className="section-heading" data-reveal>
+              <span className="section-label">Projetos</span>
               <h2 id="projects-title">O que tenho construído</h2>
               <p>Produtos completos, pensados da experiência de uso até a API e os dados.</p>
             </div>
@@ -200,6 +203,7 @@ function App() {
         <section className="section education-section" id="formacao" aria-labelledby="education-title">
           <div className="container narrow-container">
             <div className="section-heading" data-reveal>
+              <span className="section-label">Formação</span>
               <h2 id="education-title">Sempre aprendendo</h2>
             </div>
             <div className="education-row" data-reveal>
@@ -219,6 +223,7 @@ function App() {
 
         <section className="section contact-section grid-surface" id="contato" aria-labelledby="contact-title">
           <div className="container narrow-container" data-reveal>
+            <span className="section-label">Contato</span>
             <h2 id="contact-title">Vamos conversar?</h2>
             <p>Tem um projeto, uma oportunidade ou uma ideia para trocar? Minha caixa de entrada está aberta.</p>
             <a className="contact-email" href={`mailto:${profile.email}`}>

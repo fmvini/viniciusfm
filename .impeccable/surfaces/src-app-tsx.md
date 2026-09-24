@@ -13,7 +13,7 @@ Modo: Experience. O visitante procura trabalhos, stack, formação e uma forma d
 
 THESIS: Um portfólio pessoal claro, centrado na identidade de Vinícius F. Marrocos e em dois projetos reais. A organização segue as capturas que o usuário adicionou em `exemplos/`, com conteúdo próprio e leitura direta.
 
-OWN-WORLD: Superfície quase preta, grade quadrada sutil, branco suave e verde-lima como único destaque. Tipografia sans forte para nome e seções; texto técnico e metadados em mono. Cabeçalho discreto, botões compactos e cartões de projeto que lembram janelas de navegador.
+OWN-WORLD: Superfície quase preta, grade quadrada sutil, branco suave e verde-lima como único destaque. Tipografia sans forte para nome e seções; rótulos pequenos verde-lima acima de Sobre, Stack, Projetos, Formação e Contato; texto técnico e metadados em mono. Cabeçalho discreto, botões compactos e cartões de projeto que lembram janelas de navegador.
 
 STORY: O visitante identifica Vinícius, entende o campo fullstack, examina VFitness e Vault, confere as tecnologias e a formação no IFSP e encontra e-mail, GitHub e LinkedIn.
 

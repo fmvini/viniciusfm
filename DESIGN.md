@@ -37,6 +37,11 @@ typography:
     fontSize: "12px"
     fontWeight: 500
     letterSpacing: "0.08em"
+  section-label:
+    fontFamily: "Geist Mono, monospace"
+    fontSize: "12px"
+    fontWeight: 600
+    letterSpacing: "0.14em"
 rounded:
   control: "6px"
   portrait: "8px"
@@ -80,7 +85,7 @@ No tema escuro, `ink` é o fundo, `surface` e `surface-raised` separam blocos, `
 
 ## Typography
 
-Geist sustenta títulos e texto corrido; Geist Mono identifica grupos de tecnologias, etiquetas e o papel profissional. O nome usa peso 800, caixa alta e espaçamento apertado. O tamanho base do nome é `clamp(43px, 5.5vw, 76px)`, passando a `clamp(57px, 6vw, 80px)` acima de 900px; em telas até 760px e 520px há ajustes próprios. Títulos de seção usam a escala `headline`; o texto corrido usa 16px com entrelinha 1.77 e largura de até 76ch. O rótulo de grupos usa 12px, peso 500 e espaçamento de 0.08em.
+Geist sustenta títulos e texto corrido; Geist Mono identifica grupos de tecnologias, etiquetas e o papel profissional. O nome usa peso 800, caixa alta e espaçamento apertado. O tamanho base do nome é `clamp(43px, 5.5vw, 76px)`, passando a `clamp(57px, 6vw, 80px)` acima de 900px; em telas até 760px e 520px há ajustes próprios. Títulos de seção usam a escala `headline`; o texto corrido usa 16px com entrelinha 1.77 e largura de até 76ch. Os rótulos verde-lima acima de Sobre, Stack, Projetos, Formação e Contato usam Geist Mono, 12px, peso 600, caixa alta e espaçamento de 0.14em. O rótulo de grupos usa 12px, peso 500 e espaçamento de 0.08em.
 
 ## Layout
 

@@ -273,6 +273,17 @@ a:hover { color: var(--accent); }
 
 .section { padding: 112px 0 122px; border-bottom: 1px solid var(--line); }
 .section-heading { margin-bottom: 52px; }
+.section-label {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--accent);
+  font-family: 'Geist Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .section h2 {
   margin: 0;
   font-size: clamp(30px, 3.4vw, 47px);

@@ -6,6 +6,7 @@ test('mostra identidade, projetos e links corretos no desktop', async ({ page })
   await page.goto('/')
 
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Vinícius F. Marrocos')
+  await expect(page.locator('.section-label')).toHaveText(['Sobre', 'Stack', 'Projetos', 'Formação', 'Contato'])
   await expect(page.locator('.hero-intro')).toHaveCSS('opacity', '1')
   await expect(page.getByRole('heading', { name: 'O que tenho construído' })).toBeVisible()
   await expect(page.getByRole('link', { name: 'Abrir VFitness em outra aba' })).toHaveAttribute('href', 'https://vfitness-app.vercel.app/')
