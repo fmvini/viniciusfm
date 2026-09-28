@@ -1,9 +1,9 @@
 export const profile = {
   name: 'Vinícius F. Marrocos',
   shortName: 'viniciusfm',
-  role: 'Desenvolvedor Fullstack & AI Enthusiast',
+  role: 'Desenvolvedor Fullstack & AI Engineer',
   intro:
-    'Desenvolvo aplicações web completas, do frontend em React e TypeScript ao backend em Python e Node.js.',
+    'Desenvolvo aplicações web completas, com frontend em React e TypeScript e o backend em Python e Node.js.',
   about: [
     'Sou desenvolvedor fullstack em formação e curso Análise e Desenvolvimento de Sistemas no IFSP. Gosto de transformar necessidades reais em produtos que sejam claros para quem usa e sólidos por dentro.',
     'No VFitness, trabalhei no fluxo de treinos e na arquitetura com React, FastAPI e PostgreSQL. No Vault, reuni transações, planejamento e visualização de finanças pessoais em uma experiência para desktop e celular.',

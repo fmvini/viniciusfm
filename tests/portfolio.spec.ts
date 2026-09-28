@@ -70,13 +70,13 @@ test('menu e conteúdo funcionam no celular sem rolagem horizontal', async ({ pa
   await page.screenshot({ path: '.impeccable/review/mobile.png', fullPage: true })
 })
 
-test('aplica a identidade Lima e carrega as imagens reais sem overflow', async ({ page }) => {
+test('aplica a nova paleta e carrega as imagens reais sem overflow', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 })
   await page.goto('/')
   await expect(page.locator('.portrait')).toHaveJSProperty('naturalWidth', 901)
   await expect(page.locator('.portrait')).toHaveCSS('border-radius', '8px')
   const accent = await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--accent').trim())
-  expect(accent).toBe('#c0f27c')
+  expect(accent).toBe('#d8b8d2')
   await page.locator('#projetos').scrollIntoViewIfNeeded()
   for (const image of await page.locator('.project-preview img').all()) {
     await expect(image).toHaveJSProperty('complete', true)
