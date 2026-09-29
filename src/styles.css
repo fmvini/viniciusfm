@@ -17,19 +17,19 @@
 :root {
   font-family: Geist, system-ui, sans-serif;
   color-scheme: dark;
-  --background: #1a1216;
-  --surface: #241a21;
-  --surface-raised: #30202b;
+  --background: #06070E;
+  --surface: #211431;
+  --surface-raised: #211431;
   --text: #f6f4f5;
   --muted: #9a9298;
   --subtle: #9a9298;
-  --line: #463a42;
+  --line: #311a4d;
   --grid: rgb(246 244 245 / 0.035);
-  --accent: #d8b8d2;
-  --accent-solid: #d8b8d2;
+  --accent: #642CA9;
+  --accent-solid: #642CA9;
   --accent-on: #1a1216;
-  --accent-hover: #e8d2e3;
-  --tag: #3a2035;
+  --accent-hover: #401e69;
+  --tag: #381d58;
   --tag-text: #e8d2e3;
   --focus: #d8b8d2;
   --scroll-progress: 0;
@@ -37,7 +37,7 @@
 
 :root[data-theme='light'] {
   color-scheme: light;
-  --background: #f6f4f5;
+  --background: #F7F7FF;
   --surface: #f6f4f5;
   --surface-raised: #ece7ea;
   --text: #1a1216;
