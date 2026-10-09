@@ -48,7 +48,46 @@ export type Project = {
 }
 
 export const projects: Project[] = [
+    {
+    name: 'Gandalf',
+    url: 'https://gandalf-gray.vercel.app/',
+    repoUrl: 'https://github.com/fmvini/Gandalf',
+    domain: 'gandalf-gray.vercel.app',
+    mark: '/images/gandalf-icon.svg',
+    screenshot: '/images/gandalf-mainpage.png',
+    screenshotAlt: 'Imagem da pagina principal do Gandalf com o campo de busca e a lista de resultados',
+    summary:
+      'Plataforma web com IA para descoberta personalizada de músicas e livros.',
+    details: [
+      'Busca por palavras-chave e filtros para encontrar conteúdo relevante.',  
+      'Transações em BRL, USD e EUR, categorias, despesas recorrentes e metas de poupança.',
+      'Visão geral com saldo, evolução no tempo e distribuição de gastos por categoria.',
+      'React e TypeScript no frontend; FastAPI, SQLAlchemy e autenticação JWT na API.',
+    ],
+    tags: ['Python', 'TypeScript', 'React', 'Groq API'],
+    note: 'O nível de respostas da IA ainda está em desenvolvimento, mas já é possível buscar músicas e livros em linguagem natural.',
+  },
   {
+    name: 'Vigil',
+    url: 'https://vigil-4q06.onrender.com/',
+    repoUrl: 'https://github.com/fmvini/Vigil',
+    domain: 'vigil-4q06.onrender.com',
+    mark: '/images/vigil-icon.svg',
+    screenshot: '/images/vigil-page.png',
+    screenshotAlt: 'Imagem da pagina principal do Vigil com o campo de busca e a lista de resultados',
+    summary:
+      'Plataforma de monitoramento de API e gerenciamento de incidentes com métricas em tempo real.',
+    details: [
+      'Monitoramento de APIs com métricas em tempo real, acompanhamento de uptime e gestão de incidentes.',
+      'Workers assíncronos para execução de verificações em intervalos configuráveis.',
+      'Páginas de status públicas para comunicar a disponibilidade dos serviços aos usuários finais.',
+
+
+    ],
+    tags: ['Python', 'TypeScript', 'React'],
+    note: 'O nível de qualidade do checker ainda precisa ser escalado, mas ja funciona para monitorar APIs e gerar métricas de disponibilidade.',
+  },
+    {
     name: 'VFitness',
     url: 'https://vfitness-app.vercel.app/',
     repoUrl: 'https://github.com/fmvini/vfitness',
@@ -82,7 +121,7 @@ export const projects: Project[] = [
     ],
     tags: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL'],
     note: 'A área de análises e relatórios ainda está em desenvolvimento.',
-  },
+  },  
 ]
 
 export const education = {
